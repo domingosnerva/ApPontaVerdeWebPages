@@ -1,0 +1,60 @@
+<!doctype html>
+<html ⚡ lang="pt-BR">
+  <head> 
+    <meta charset="utf-8">
+    <title>Minha Web Story</title>
+    <link rel="canonical" href="https://seusite.com/meu-story.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="amp-story-publisher" content="ApPontaVerde">
+    <meta name="amp-story-publisher-logo-src" content="logo.png">
+    <meta name="amp-story-poster-portrait-src" content="poster.jpg">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story"
+        src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+
+    <style amp-custom>
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        font-size: 32px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <amp-story standalone
+      title="Web Story ApPontaVerde"
+      publisher="Domingos Nerva"
+      publisher-logo-src="logo.png"
+      poster-portrait-src="poster.jpg">
+
+      <!-- Página 1 -->
+      <amp-story-page id="pag1">
+        <amp-story-grid-layer template="fill">
+          <img src="img1.jpg" alt="Imagem">
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="center">
+          <h1>Bem-vindo!</h1>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Página 2 -->
+      <amp-story-page id="pag2">
+        <amp-story-grid-layer template="fill">
+          <img src="img2.jpg" alt="Imagem">
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="center">
+          <h2>Maceio Ponta verde</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+    </amp-story>
+
+  </body>
+</html>
