@@ -29,14 +29,88 @@
     </noscript>
 
     <style amp-custom>
+      /* Estilos Gerais */
+      amp-story {
+        font-family: 'Roboto', sans-serif;
+      }
+      
       .center {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         padding: 20px;
-        font-size: 32px;
         color: white;
+      }
+
+      h1 { font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+      h2 { font-size: 2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+
+      /* Estilo do Cartão Airbnb Personalizado para AMP */
+      .airbnb-wrapper {
+        align-content: center;
+        padding: 24px;
+        background: rgba(0,0,0,0.3); /* Fundo escuro para destacar o cartão */
+      }
+
+      .airbnb-card {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        color: #484848;
+        max-width: 400px;
+        width: 100%;
+        text-align: left;
+      }
+
+      .airbnb-supertitle {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 800;
+        color: #767676;
+        margin-bottom: 4px;
+        display: block;
+      }
+
+      .airbnb-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #484848;
+        margin: 0 0 8px 0;
+      }
+
+      .airbnb-details {
+        font-size: 14px;
+        color: #484848;
+        margin-bottom: 16px;
+      }
+
+      .airbnb-rating {
+        font-size: 14px;
+        font-weight: bold;
+        color: #242424;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .airbnb-rating span {
+        color: #FF385C; /* Cor da marca Airbnb */
+        margin-right: 4px;
+      }
+
+      .airbnb-button {
+        display: block;
+        background-color: #FF385C;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
       }
     </style>
   </head>
@@ -49,30 +123,56 @@
       publisher-logo-src="logo.png"
       poster-portrait-src="poster.jpg">
 
-      <!-- Página 1 -->
       <amp-story-page id="pag1">
         <amp-story-grid-layer template="fill">
-          <amp-img src="img1.png" alt="Imagem" layout="fill"></amp-img>
+          <amp-img src="img1.png" width="720" height="1280" layout="responsive" alt="Imagem de boas vindas"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="center">
           <h1>Bem-vindo!</h1>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Página 2 -->
       <amp-story-page id="pag2">
         <amp-story-grid-layer template="fill">
-          <amp-img src="img2.png" alt="Imagem" layout="fill"></amp-img>
+          <amp-img src="img2.png" width="720" height="1280" layout="responsive" alt="Ponta Verde"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="center">
-          <h2>Maceio Ponta verde</h2>
+          <h2>Maceió Ponta Verde</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
-    </amp-story>
-    <div class="airbnb-embed-frame" data-id="1397415065443106660" data-view="home" data-hide-price="true" style="width: 450px; height: 300px; margin: auto;"><a href="https://www.airbnb.com.br/rooms/1397415065443106660?check_in=2025-12-03&amp;check_out=2025-12-05&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget">Ver no Airbnb</a><a href="https://www.airbnb.com.br/rooms/1397415065443106660?check_in=2025-12-03&amp;check_out=2025-12-05&amp;guests=1&amp;adults=1&amp;s=66&amp;source=embed_widget" rel="nofollow">Apartamento · Maceió · ★5,0 · 1 quarto · 1 cama · 1 banheiro</a><script async="" src="https://www.airbnb.com.br/embeddable/airbnb_jssdk"></script></div>
-  </body>
+      <amp-story-page id="pag3">
+        <amp-story-grid-layer template="fill">
+           <amp-img src="img2.png" width="720" height="1280" layout="responsive" alt="Fundo Reserva"></amp-img>
+        </amp-story-grid-layer>
 
+        <amp-story-grid-layer template="vertical" class="airbnb-wrapper">
+          <div class="airbnb-card">
+            <span class="airbnb-supertitle">Apartamento em Maceió</span>
+            <h3 class="airbnb-title">Hospede-se na Ponta Verde</h3>
+            <div class="airbnb-details">
+              1 quarto · 1 cama · 1 banheiro
+            </div>
+            <div class="airbnb-rating">
+              <span>★</span> 5,0 (Excelente)
+            </div>
+            <a class="airbnb-button" href="https://www.airbnb.com.br/rooms/1397415065443106660?check_in=2025-12-03&check_out=2025-12-05&guests=1&adults=1&s=66&source=embed_widget">
+              Ver Disponibilidade
+            </a>
+          </div>
+        </amp-story-grid-layer>
+
+        <amp-story-page-outlink layout="nodisplay">
+          <a href="https://www.airbnb.com.br/rooms/1397415065443106660?check_in=2025-12-03&check_out=2025-12-05&guests=1&adults=1&s=66&source=embed_widget">
+            Reservar no Airbnb
+          </a>
+        </amp-story-page-outlink>
+
+      </amp-story-page>
+
+    </amp-story>
+  </body>
 </html>
+
 
 
