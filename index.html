@@ -49,13 +49,6 @@
         color: #222222;
       }
 
-      .airbnb-details {
-        font-size: 14px;
-        color: #717171;
-        margin-bottom: 20px;
-        display: block;
-      }
-
       .airbnb-rating {
         font-size: 14px;
         font-weight: bold;
@@ -97,7 +90,7 @@
       publisher="Domingos Nerva"
       publisher-logo-src="logo.png"
       poster-portrait-src="poster.jpg">
-     
+      
       <amp-story-page id="pag1">
         <amp-story-grid-layer template="fill">
           <amp-img src="img2.png" width="720" height="1280" layout="responsive" alt="Fundo Reserva"></amp-img>
@@ -115,13 +108,20 @@
             <span class="airbnb-details">1 quarto · 1 cama · 1 banheiro</span>
             
             <a href="https://www.airbnb.com.br/rooms/1397415065443106660?check_in=2025-12-03&check_out=2025-12-05&guests=1&adults=1&s=66&source=embed_widget" 
-               class="airbnb-button"
-               target="_blank">
-               Ver disponibilidade
+              class="airbnb-button"
+              target="_blank">
+              Ver disponibilidade
             </a>
           </div>
+        </amp-story-grid-layer>
+        
+        <amp-story-cta-layer>
+            <a href="https://www.airbnb.com.br/rooms/1397415065443106660?source=embed_widget" class="airbnb-button" style="text-align:center; margin-bottom: 20px; width: 200px; margin-left: auto; margin-right: auto; background: white; color: #FF385C;">
+              Reservar Agora
+            </a>
+        </amp-story-cta-layer>
+      </amp-story-page>
 
-      
       <amp-story-page id="pag2">
         <amp-story-grid-layer template="fill">
           <amp-img src="img2.png" width="720" height="1280" layout="responsive" alt="Ponta Verde"></amp-img>
@@ -138,17 +138,6 @@
         <amp-story-grid-layer template="vertical" class="center">
           <h1>Bem-vindo!</h1>
         </amp-story-grid-layer>
-      </amp-story-page>
-
-      
-        </amp-story-grid-layer>
-        
-        <amp-story-cta-layer>
-            <a href="https://www.airbnb.com.br/rooms/1397415065443106660?source=embed_widget" class="airbnb-button" style="text-align:center; margin-bottom: 20px; width: 200px; margin-left: auto; margin-right: auto; background: white; color: #FF385C;">
-              Reservar Agora
-            </a>
-        </amp-story-cta-layer>
-
       </amp-story-page>
 
     </amp-story>
