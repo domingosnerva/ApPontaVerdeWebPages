@@ -83,7 +83,21 @@
         transform: scale(0.98);
       }
       
-      /* O estilo .second-cta foi removido */
+      /* Novo estilo para o botão "Mais..." na camada de conteúdo */
+      .more-button {
+          background: white;
+          color: #FF385C;
+          text-decoration: none;
+          padding: 10px 20px;
+          border-radius: 8px;
+          font-weight: bold;
+          font-size: 14px;
+          display: block;
+          text-align: center;
+          width: 150px; /* Um pouco menor */
+          margin: 10px auto; /* Centraliza e adiciona margem */
+          border: 1px solid #FF385C; 
+      }
 
     </style>
   </head>
@@ -105,6 +119,12 @@
         <amp-story-grid-layer template="fill" style="background: rgba(0,0,0,0.3);"></amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="center">
+          
+          <a href="https://apartamentopontaverdemaceio.my.canva.site" 
+             target="_blank" 
+             class="more-button">
+              Mais detalhes
+          </a>
           
           <div class="airbnb-card-wrapper">
             <div class="airbnb-title">Apartamento · Maceió</div>
@@ -129,8 +149,7 @@
                style="width: 200px; margin: 0 auto 20px auto;">
               Reservar Agora
             </a>
-
-            </amp-story-cta-layer>
+        </amp-story-cta-layer>
       </amp-story-page>
 
       <amp-story-page id="pag2">
