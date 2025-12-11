@@ -36,7 +36,7 @@
         border-radius: 16px;
         box-shadow: 0 8px 30px rgba(0,0,0,0.25);
         text-align: left;
-        max-width: 85%; /* Garante que não estoure a tela no celular */
+        max-width: 85%;
         margin: auto;
         color: #484848;
       }
@@ -75,11 +75,29 @@
         text-align: center;
         transition: background-color 0.2s;
         box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        margin-bottom: 10px; /* Adicionado margem para separação dos botões */
       }
       
       .airbnb-button:active {
         transform: scale(0.98);
       }
+      
+      /* Novo estilo para o segundo botão no CTA Layer */
+      .second-cta {
+          background: white;
+          color: #FF385C;
+          text-decoration: none;
+          padding: 12px 24px;
+          border-radius: 8px;
+          font-weight: bold;
+          font-size: 16px;
+          display: block;
+          text-align: center;
+          width: 200px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
     </style>
   </head>
 
@@ -90,6 +108,7 @@
       publisher="Domingos Nerva"
       publisher-logo-src="logo.png"
       poster-portrait-src="poster.jpg">
+      
       
       <amp-story-page id="pag1">
         <amp-story-grid-layer template="fill">
@@ -116,15 +135,13 @@
         </amp-story-grid-layer>
         
         <amp-story-cta-layer>
-            <a href="https://www.airbnb.com.br/rooms/1397415065443106660?source=embed_widget" class="airbnb-button" style="text-align:center; margin-bottom: 20px; width: 200px; margin-left: auto; margin-right: auto; background: white; color: #FF385C;">
+            <a href="https://www.airbnb.com.br/rooms/1397415065443106660?source=embed_widget" class="airbnb-button" style="text-align:center; width: 200px; margin-left: auto; margin-right: auto; ">
               Reservar Agora
             </a>
-        </amp-story-cta-layer>
 
-        <amp-story-cta-layer>
-          <a href="https://apartamentopontaverdemaceio.my.canva.site" style="text-align:center; margin-bottom: 20px; width: 200px; margin-left: auto; margin-right: auto; background: white; color: #FF385C;">
-              Mais ...
-            </a>
+            <a href="https://apartamentopontaverdemaceio.my.canva.site" class="second-cta" style="margin-bottom: 20px;">
+                Mais ...
+             </a>
         </amp-story-cta-layer>
       </amp-story-page>
 
@@ -149,5 +166,3 @@
     </amp-story>
   </body>
 </html>
-
-
