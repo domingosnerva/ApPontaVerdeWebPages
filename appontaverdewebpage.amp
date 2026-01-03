@@ -1,15 +1,6 @@
 <!doctype html>
 <html ⚡ lang="pt-BR">
   <head> 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HGDET7924T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HGDET7924T');
-</script>
     <meta charset="utf-8">
     <title>Minha Web Story</title>
     <link rel="canonical" href="https://seusite.com/meu-story.html">
@@ -68,3 +59,4 @@
   </body>
 
 </html>
+
